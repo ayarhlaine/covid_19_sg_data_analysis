@@ -21,6 +21,15 @@ app.layout = html.Div(children=[
             'textAlign': 'center',
         }
     ),
+    html.Div(
+        className='card',
+        children=[
+            html.Div(children='Cases', className='card-item'),
+            html.Div(children='Deaths', className='card-item'),
+            html.Div(children='Discharged', className='card-item'),
+            html.Div(children='Vaccine Doses', className='card-item'),
+        ]
+    ),
     dcc.Graph(
         id='example-graph',
         figure=fig

@@ -1,0 +1,11 @@
+.card {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 5px;
+}
+
+.card-item {
+    border: 1px solid #e3e3e3;
+    min-height: 100px;
+    padding: 0.5rem;
+}
