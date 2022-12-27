@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    container_name: covid_19_sg_data_analysis
+    stdin_open: true
+    tty: true
+    ports:
+      - "8050:8050"
+    volumes:
+      - .:/covid_19_sg
+    command: /bin/sh
